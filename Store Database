@@ -1,0 +1,20 @@
+CREATE a store database 
+
+CREATE TABLE rings (id INTEGER PRIMARY KEY, shape TEXT, quantity INTEGER, size INTEGER, price INTEGER, metal TEXT);
+
+INSERT INTO rings VALUES (1,"oval", 1,4,5,"gold");
+INSERT INTO rings VALUES (2,"circle", 1,7,4,"silver");
+INSERT INTO rings VALUES (3,"square", 1,6,6,"gold");
+INSERT INTO rings VALUES (4,"oval", 2,8,5,"gold");
+INSERT INTO rings VALUES (5,"oval", 1,4,5,"silver");
+INSERT INTO rings VALUES (6,"oval", 1,6,5,"silver");
+INSERT INTO rings VALUES (7,"square", 1,4,6,"gold");
+INSERT INTO rings VALUES (8,"sqaure", 1,8,6,"gold");
+INSERT INTO rings VALUES (9,"sqaure", 2,7,6,"silver");
+INSERT INTO rings VALUES (10,"oval", 2,7,5,"silver");
+INSERT INTO rings VALUES (11,"circle", 2,4,4,"gold");
+INSERT INTO rings VALUES (12,"oval", 1,4,5,"silver");
+INSERT INTO rings VALUES (13,"oval", 1,7,5,"gold");
+INSERT INTO rings VALUES (14,"circle", 1,4,4,"gold");
+INSERT INTO rings VALUES (15,"circle", 1,4,4,"silver");
+SELECT * FROM rings ORDER BY size; 
