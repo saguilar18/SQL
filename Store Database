@@ -17,4 +17,9 @@ INSERT INTO rings VALUES (12,"oval", 1,4,5,"silver");
 INSERT INTO rings VALUES (13,"oval", 1,7,5,"gold");
 INSERT INTO rings VALUES (14,"circle", 1,4,4,"gold");
 INSERT INTO rings VALUES (15,"circle", 1,4,4,"silver");
+
+--display the database ordered by size. 
 SELECT * FROM rings ORDER BY size; 
+
+--What are the most 5 popular items? 
+SELECT size, shape, metal FROM rings ORDER BY shape desc limit 5;
