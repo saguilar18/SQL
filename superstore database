@@ -25,15 +25,18 @@ VALUES
     (14, 'Cutlery Set', 'Kitchen Supplies', 34.50, 40, 4.4),
     (15, 'Cozy Throw Blanket', 'Furnishings', 24.99, 100, 4.2);
 
+#Use select statement to order items by price
 SELECT item_name
 FROM superstore
 ORDER BY price;
 
+#Show a statistic about the prices for items in the category "kitchen supplies"
 SELECT COUNT(price),item_name
 FROM superstore
 WHERE category="Kitchen Supplies"
 GROUP BY item_name;
 
+#Show statistic about the stock quantity for the item name "air purifier"
 SELECT SUM(stock_quantity), item_name
 FROM superstore
 WHERE item_name="Air Purifier"
